@@ -1,6 +1,7 @@
 package kurs.zajecia7;
 
 import java.util.Scanner;
+import kurs.zajecia8.Test;
 
 /* Następne zajęcia dopiero 11 stycznia! */
 public class Main {
