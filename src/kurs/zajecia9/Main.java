@@ -1,10 +1,14 @@
 package kurs.zajecia9;
 
 import java.util.Scanner;
+import kurs.zajecia11.Human;
 
 public class Main {
     public static void main(String[] args) {
-        przyklad4();
+        //Human h1 = new Human("Krzysztof", 40);
+        //h1.hello();
+
+        //przyklad4();
     }
 
     public static void przyklad4() {
