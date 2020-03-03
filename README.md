@@ -1,3 +1,5 @@
 # kurs-java
 
-> Kod z zajęć programowania
+Kody z zajęć programowania
+
+> HorsITway Sp. z o.o.

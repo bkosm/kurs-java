@@ -1,4 +1,4 @@
-package kurs.zajecia12;
+package zajecia12;
 
 import java.util.ArrayList;
 import java.util.Date;

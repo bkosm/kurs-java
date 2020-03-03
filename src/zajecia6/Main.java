@@ -1,4 +1,4 @@
-package kurs.zajecia6;
+package zajecia6;
 
 import java.util.Scanner;
 

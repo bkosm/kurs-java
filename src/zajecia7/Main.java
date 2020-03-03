@@ -1,7 +1,7 @@
-package kurs.zajecia7;
+package zajecia7;
 
 import java.util.Scanner;
-import kurs.zajecia8.Test;
+import zajecia8.Test;
 
 /* Następne zajęcia dopiero 11 stycznia! */
 public class Main {
@@ -22,7 +22,7 @@ public class Main {
             if (wartosc > maks) maks = wartosc;
         }
 
-        System.out.println("Największa wartość: " + maks + ", a odpowiadający znak to: " + (char) maks);
+        System.out.println("NajwiÄ™ksza wartoÅ›Ä‡: " + maks + ", a odpowiadajÄ…cy znak to: " + (char) maks);
     }
 
     public static void przyklad2() {
@@ -47,17 +47,17 @@ public class Main {
         }
 
         for (String tekst : output) {
-            System.out.println("Najkrótszy wyraz w linii to: " + tekst);
+            System.out.println("NajkrÃ³tszy wyraz w linii to: " + tekst);
         }
     }
 
     public static void zaddom() {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Wprowadź słowo: ");
+        System.out.println("WprowadÅº sÅ‚owo: ");
         String input = scan.nextLine();
 
-        System.out.println("Wprowadź znak do policzenia: ");
+        System.out.println("WprowadÅº znak do policzenia: ");
         char sign = scan.nextLine().charAt(0);
 
         int count = 0;
@@ -66,6 +66,6 @@ public class Main {
             if (sign == input.charAt(i)) count++;
         }
 
-        System.out.println("Ilość znaków '" + sign + "' w słowie '" + input + "': " + count);
+        System.out.println("IloÅ›Ä‡ znakÃ³w '" + sign + "' w sÅ‚owie '" + input + "': " + count);
     }
 }

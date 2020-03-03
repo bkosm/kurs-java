@@ -1,4 +1,4 @@
-package kurs.zajecia11;
+package zajecia11;
 
 public class Human {
     private String name;

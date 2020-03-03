@@ -1,4 +1,4 @@
-package kurs.zajecia11;
+package zajecia11;
 
 public class Table {
     private int ilOsob;

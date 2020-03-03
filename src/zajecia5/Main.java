@@ -1,4 +1,4 @@
-package kurs.zajecia5;
+package zajecia5;
 
 public class Main {
 

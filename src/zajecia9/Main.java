@@ -1,7 +1,7 @@
-package kurs.zajecia9;
+package zajecia9;
 
 import java.util.Scanner;
-import kurs.zajecia11.Human;
+import zajecia11.Human;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package kurs.zajecia12;
+package zajecia12;
 
 public class Produkt {
     private String nazwa;
