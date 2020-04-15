@@ -1,0 +1,4 @@
+nowak;12345
+kowalski;678566
+nowicki;345674
+maciejewski;984576
