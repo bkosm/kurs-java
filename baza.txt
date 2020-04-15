@@ -1,4 +1,6 @@
 nowak;12345
 kowalski;678566
+kosmala;221872
 nowicki;345674
+jerzy;22455
 maciejewski;984576
