@@ -1,0 +1,2 @@
+chleb;1
+maslo;1

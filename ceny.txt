@@ -1,0 +1,8 @@
+chleb;3.56
+mleko;2.99
+woda;1.59
+makaron;4.28
+banan;3.56
+pomidor;2.87
+cytryna;1.01
+maslo;1.99
