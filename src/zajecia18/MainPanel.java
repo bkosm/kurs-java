@@ -67,16 +67,71 @@ public class MainPanel extends JPanel implements ActionListener {
 			JButton button = new JButton(text);
 			button.addActionListener(this);
 			button.setBounds(positionX, positionY, 60, 40);
-			
+
 			numbers.add(button);
 			this.add(button);
 		}
-		
+
+		clean = new JButton("Clean");
+		clean.setBounds(65, 210, 80, 40);
+		clean.addActionListener(this);
+
+		backspace = new JButton("Backspace");
+		backspace.setBounds(150, 210, 170, 40);
+		backspace.addActionListener(this);
+
+		plus = new JButton("+");
+		plus.setBounds(195, 60, 60, 40);
+		plus.addActionListener(this);
+
+		minus = new JButton("-");
+		minus.setBounds(260, 60, 60, 40);
+		minus.addActionListener(this);
+
+		add = new JButton("Add");
+		add.setBounds(195, 110, 125, 40);
+		add.addActionListener(this);
+
+		print = new JButton("Print");
+		print.setBounds(195, 160, 125, 40);
+		print.addActionListener(this);
+
+		code = new JLabel("Podaj kod");
+		code.setBounds(0, 0, 100, 30);
+
+		quantity = new JLabel(String.valueOf(quantityValue));
+		quantity.setBounds(255, 0, 100, 30);
+
+		add(clean);
+		add(backspace);
+		add(plus);
+		add(minus);
+		add(add);
+		add(print);
+		add(code);
+		add(quantity);
+
 		setLayout(null);
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		
+		Object source = e.getSource();
+
+		if (source == clean) {
+			cleanCode();
+		} else if (source == backspace) {
+			codeValue = buttonService.backspaceCode(codeValue, code);
+		} else if (source == plus) {
+			quantityValue = buttonService.plusQuantity(quantityValue, quantity);
+		} else if (source == minus) {
+			quantityValue = buttonService.minusQuantity(quantityValue, quantity);
+		}
+
+	}
+
+	private void cleanCode() {
+		code.setText("Podaj kod");
+		codeValue = "";
 	}
 }
