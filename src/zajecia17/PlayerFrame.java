@@ -1,6 +1,5 @@
 package zajecia17;
 
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -10,7 +9,7 @@ import javax.swing.JLabel;
 
 public class PlayerFrame extends JFrame implements ActionListener {
 	private final int MAX_INDEX = 9;
-	private final int WIDTH = 335;
+	private final int WIDTH = 345;
 	private final int HEIGHT = 105;
 
 	private JButton plus;
