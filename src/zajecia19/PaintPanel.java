@@ -110,6 +110,7 @@ public class PaintPanel extends JPanel implements MouseListener, KeyListener {
 	}
 
 	@Override
-	public void keyReleased(KeyEvent e) {
+	public void keyReleased(KeyEvent e) {		
 	}
+
 }

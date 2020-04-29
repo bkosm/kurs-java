@@ -141,7 +141,8 @@ public class MainPanel extends JPanel implements ActionListener {
 			
 		} else {
 			/* przycisk musi być jedną z cyfr */
-			
+			int num = buttonService.findButtonNum(source, numbers);
+			codeValue = buttonService.addNumToCode(num, codeValue, code);
 		}
 	}
 
