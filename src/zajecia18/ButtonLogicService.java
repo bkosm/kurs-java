@@ -1,10 +1,15 @@
 package zajecia18;
 
+import java.util.Map;
+
 import javax.swing.JLabel;
 
 public class ButtonLogicService {
+	private String savePath;
 
-	public ButtonLogicService() { }
+	public ButtonLogicService(String path) { 
+		savePath = path;
+	}
 
 	public String backspaceCode(String code, JLabel label) {
 		if (!code.equals("")) {
@@ -36,5 +41,9 @@ public class ButtonLogicService {
 		}
 
 		return quantity;
+	}
+	
+	public void printBill(Map<String, Integer> map) {
+		//String += "ok"; 
 	}
 }

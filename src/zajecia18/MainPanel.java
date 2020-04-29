@@ -33,7 +33,7 @@ public class MainPanel extends JPanel implements ActionListener {
 	public MainPanel() {
 		codeValue = "";
 		quantityValue = 1;
-		buttonService = new ButtonLogicService();
+		buttonService = new ButtonLogicService("./bill.txt");
 
 		map = new LinkedHashMap<>();
 		numbers = new ArrayList<>();
@@ -120,18 +120,44 @@ public class MainPanel extends JPanel implements ActionListener {
 
 		if (source == clean) {
 			cleanCode();
+
 		} else if (source == backspace) {
 			codeValue = buttonService.backspaceCode(codeValue, code);
+
 		} else if (source == plus) {
 			quantityValue = buttonService.plusQuantity(quantityValue, quantity);
+
 		} else if (source == minus) {
 			quantityValue = buttonService.minusQuantity(quantityValue, quantity);
-		}
 
+		} else if (source == add) {
+			addCodeToMap();
+
+		} else if (source == print) {
+			buttonService.printBill(map);
+			
+			cleanCode();
+			cleanQuantity();
+			
+		} else {
+			/* przycisk musi być jedną z cyfr */
+			
+		}
 	}
 
 	private void cleanCode() {
 		code.setText("Podaj kod");
 		codeValue = "";
+	}
+
+	private void cleanQuantity() {
+		quantityValue = 1;
+		quantity.setText("1");
+	}
+
+	private void addCodeToMap() {
+		map.put(codeValue, quantityValue);
+		cleanCode();
+		cleanQuantity();
 	}
 }
