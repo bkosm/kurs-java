@@ -1,5 +1,7 @@
 package zajecia23;
 
+import java.awt.Font;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
@@ -12,8 +14,11 @@ public class MainPanel extends JPanel {
 	public MainPanel(Frame frame) {
 		this.frame = frame;
 
-		label = new JLabel("MainPanel");
-		label.setBounds(0, 0, 200, 200);
+		label = new JLabel("Welcome");
+		label.setBounds(0, 0, 600, 400);
+		label.setHorizontalAlignment(JLabel.CENTER);
+		
+		label.setFont(new Font("Arial", Font.PLAIN, 40));
 		
 		add(label);
 

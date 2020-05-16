@@ -17,11 +17,7 @@ public class Frame extends JFrame {
 		loginPanel = new LoginPanel(this);
 		mainPanel = new MainPanel(this);
 		
-		loginPanel.setVisible(true);
-		mainPanel.setVisible(true);
-		
 		add(loginPanel);
-		add(mainPanel);
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
@@ -30,8 +26,10 @@ public class Frame extends JFrame {
 	}
 	
 	public void switchToMainPanel() {
-		loginPanel.setVisible(false);
-		mainPanel.setVisible(true);
+		getContentPane().removeAll();
+		getContentPane().add(mainPanel);
+		
+		validate();
 	}
 
 }
