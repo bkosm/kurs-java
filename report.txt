@@ -1,0 +1,4 @@
+2020-05-13 20:15:25 ERROR -> Podana strona https://google.com/as zwraca błąd: 404
+2020-05-13 20:15:35 ERROR -> Podana strona https://google.com/as zwraca błąd: 404
+2020-05-16 11:04:58 INFO -> Podana strona https://google.com/ działa prawidłowo
+2020-05-16 11:17:21 INFO -> Podana strona https://google.com/ działa prawidłowo
